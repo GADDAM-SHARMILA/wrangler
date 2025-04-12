@@ -311,3 +311,7 @@ fragment Int
 fragment Digit
  : [0-9]
  ;
+lexer grammar DirectivesLexer;
+
+BYTE_SIZE: [0-9]+([.][0-9]+)?(B|KB|MB|GB|TB);
+TIME_DURATION: [0-9]+([.][0-9]+)?(ns|ms|s|m|h);
